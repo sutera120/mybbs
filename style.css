@@ -1,0 +1,441 @@
+/*------------------------------
+ Reset Style
+ 
+------------------------------*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/*------------------------------
+Common Style
+------------------------------*/
+body {
+  font-size: 100%;
+  font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体",
+    "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", sans-serif;
+  color: #222;
+  background: #f7f7f7;
+  line-height: 1.7;
+}
+
+a {
+  color: #007edf;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  max-width: 1200px;
+  align-items: flex-start;
+}
+
+.flex {
+  display: flex;
+}
+
+.required {
+  color: #fff;
+  background-color: #b84545;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+/*-----------------------------------
+heaader
+-----------------------------------*/
+header {
+  /* background-color: #000; */
+  background-image: url(component/bgc.png);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+
+header .flex :first-child {
+  margin-right: 20px;
+}
+
+header * {
+  color: #fff;
+}
+header a {
+  color: #fff;
+  background-color: #45b8ac;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 2px 3px;
+}
+header a:hover {
+  color: #45b8ac;
+  background-color: #fff;
+  border: 2px solid #45b8ac;
+}
+
+header .flex {
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+/*-----------------------------------
+メイン
+-----------------------------------*/
+main {
+  width: 70%;
+  margin: 0 auto 50px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #45b8ac;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+dl {
+  margin-bottom: 10px;
+}
+dt {
+  border-left: 5px solid #45b8ac;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+dd {
+  margin-bottom: 0.5em;
+}
+
+/*-----------------------------------
+入力エリア
+-----------------------------------*/
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  /* font-size: 86%; */
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #fff;
+}
+
+input[type="text"] {
+  width: 200px;
+}
+
+textarea {
+  width: 50%;
+  max-width: 50%;
+  height: 70px;
+}
+
+input[type="submit"] {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 10px 20px;
+  color: #404a52;
+  font-size: 86%;
+  line-height: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #45b8ac;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  color: #45b8ac;
+  background-color: #404a52;
+}
+
+hr {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.success_message {
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #48b400;
+  border-radius: 10px;
+  border: 1px solid #4dc100;
+}
+
+.error_message {
+  padding: 5px;
+  color: #b84545;
+  list-style-type: none;
+  border-radius: 10px;
+  border: 1px solid #b84545;
+  display: inline;
+}
+
+/*-----------------------------------
+掲示板エリア
+-----------------------------------*/
+
+article {
+  margin-bottom: 20px;
+}
+
+article time {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+#delete {
+  background-color: #b84545;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+#edit {
+  background-color: #4584b8;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+article .reply{
+  text-align: right;
+}
+
+article .reply a{
+background-color: #5145b8;
+color: #fff;
+padding: 3px 2px;
+border-radius: 5px;
+}
+
+
+
+.info {
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.info h2 {
+  display: inline-block;
+  margin-right: 10px;
+  color: #222;
+  line-height: 1.6em;
+  font-size: 86%;
+}
+
+.info time {
+  color: #999;
+  line-height: 1.6em;
+  font-size: 72%;
+}
+
+.paging {
+  text-align: center;
+}
+.paging li {
+  display: inline;
+  list-style: none;
+}
+
+.paging li a {
+  color: #fff;
+  background-color: #45b8ac;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 30px 5%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 70px;
+  }
+}
